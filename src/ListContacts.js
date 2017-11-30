@@ -21,12 +21,12 @@ class ListContacts extends Component {
             <div className="list-contacts">
                 {JSON.stringify(this.state)}
                 <div className="list-contacts-top">
-                    <input 
-                        type="text" 
-                        className="search-contacts" 
+                    <input
+                        type="text"
+                        className="search-contacts"
                         placeholder="Search Contacts"
                         value={this.state.query}
-                        onChange={(event) => this.updateQuery(event.target.value)}/>                        />
+                        onChange={(event) => this.updateQuery(event.target.value)} />                        />
                 </div>
                 <ol className='contact-list'>
                     {this.props.contacts.map((contact) => (
